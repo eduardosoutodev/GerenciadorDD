@@ -5,19 +5,11 @@ import repository.jdbc.CriaturaRepositoryJDBC;
 import repository.jdbc.ItemRepositoryJDBC;
 import repository.jdbc.PersonagemRepositoryJDBC;
 
-/**
- * Padrão de projeto: Factory (fábrica simples).
+/*
+ * Fábrica responsável por criar e fornecer as instâncias dos serviços.
  *
- * Centraliza a criação dos serviços e a "amarração" com suas respectivas
- * implementações de repositório. No projeto original, cada tela fazia
- * "new CampanhaDAO()", "new PersonagemDAO()" etc. diretamente — se um dia
- * fosse necessário trocar a implementação (ex: de JDBC para uma API REST,
- * como vai acontecer na migração para web), seria preciso alterar todas
- * as telas uma por uma.
- *
- * Com a fábrica, essa decisão de composição fica em um único lugar. As
- * views passam a pedir "ServiceFactory.getPersonagemService()" e não
- * precisam saber qual implementação de repositório está por trás.
+ * Centraliza a criação dos serviços e de seus repositórios, evitando
+ * que as telas conheçam ou instanciem as implementações diretamente.
  */
 public final class ServiceFactory {
 
