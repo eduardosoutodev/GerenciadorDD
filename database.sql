@@ -2,12 +2,12 @@
 -- Banco de dados: GerenciadorDD3.2
 -- Nome do banco ajustado para bater com util/Conexao.java
 -- (a versão original do projeto criava "gerenciador_dd",
---  mas o código Java conecta em "gerenciador_dd3_2")
+--  mas o código Java conecta em "gerenciador_dd")
 -- =========================================================
 
-DROP DATABASE IF EXISTS gerenciador_dd3_2;
-CREATE DATABASE gerenciador_dd3_2;
-USE gerenciador_dd3_2;
+DROP DATABASE IF EXISTS gerenciador_dd;
+CREATE DATABASE gerenciador_dd;
+USE gerenciador_dd;
 
 -- Tabela de Campanhas
 CREATE TABLE campanhas (
