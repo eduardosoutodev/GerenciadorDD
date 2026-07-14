@@ -1,0 +1,3 @@
+db.url=jdbc:mysql://localhost:3306/gerenciador_dd3_2?useSSL=false&serverTimezone=UTC
+db.user=root
+db.password=SUA_SENHA_AQUI

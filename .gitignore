@@ -1,0 +1,29 @@
+# NetBeans
+nbproject/private/
+build/
+dist/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Configuração local de banco (contém credenciais)
+src/db.properties
+
+# Compilados Java
+*.class
+*.jar
+!lib/*.jar
+
+# Logs e temporários
+*.log
+*.tmp
+
+# SO
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/
